@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 checkout scm
-                build 'PES2UG21CS143-1'
+                build 'PES2UG21CS143'
                 sh 'g++ main.cpp -o output'
             }
         }
