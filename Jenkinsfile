@@ -22,12 +22,13 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'deploy'
+                // Add deployment steps here if needed
             }
         }
     }
     post {
         failure {
             error 'Pipeline failed'
-        }
-    }
+        }
+    }
 }
